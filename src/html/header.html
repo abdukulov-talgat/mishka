@@ -1,0 +1,44 @@
+<header class="header">
+  <nav class="header__nav">
+    <div class="header__logo-wrapper">
+      <a class="header__logo" href="#">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+          <img src="img/mishka-logo-mobile.svg" alt="Логотип сайта">
+        </picture>
+      </a>
+    </div>
+    <ul class="header__site-nav">
+      <li><a class="header__site-link" href="#">Каталог товаров</a></li>
+      <li><a class="header__site-link" href="#">Вязание на заказ</a></li>
+    </ul>
+    <ul class="header__user-nav">
+      <li>
+        <a class="header__user-link header__user-link--search" href="#">
+          <svg width="18" height="18" viewBox="0 0 18 18">
+            <use xlink:href="img/icons/icons.svg#search"/>
+          </svg>
+          <span class="mobile-only">Поиск по сайту</span>
+        </a>
+      </li>
+      <li>
+        <a class="header__user-link header__user-link--cart" href="#">
+          <svg width="21" height="18" viewBox="0 0 21 18">
+            <use xlink:href="img/icons/icons.svg#cart"/>
+          </svg>
+          Корзина: пока пуста
+        </a>
+      </li>
+    </ul>
+    <ul class="header__special-nav">
+      <li><a class="header__special-link">Новые поступления</a></li>
+      <li><a class="header__special-link">Распродажа</a></li>
+      <li class="header__hint">Новые поступления</li>
+    </ul>
+    <button class="header__burger" type="button">
+      <span class="header__burger-span"></span>
+      <span class="visually-hidden">Меню</span>
+    </button>
+  </nav>
+</header>
