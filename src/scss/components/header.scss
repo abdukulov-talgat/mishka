@@ -28,6 +28,10 @@
     padding: 0;
     border: 0;
   }
+
+  @media (min-width: $breakpoint-1150) {
+    order: 2;
+  }
 }
 
 .header__logo {
@@ -42,6 +46,11 @@
   @media (min-width: $breakpoint-768) {
     width: 114px;
     height: 46px;
+  }
+
+  @media (min-width: $breakpoint-1150) {
+    width: 149px;
+    height: 72px;
   }
 }
 
@@ -66,7 +75,14 @@
     left: 0;
     display: flex;
     max-width: 500px;
+    flex-wrap: wrap;
     gap: 37px;
+  }
+
+  @media (min-width: $breakpoint-1150) {
+    position: static;
+    max-width: 450px;
+    order: 1;
   }
 }
 
@@ -88,12 +104,33 @@
     font-size: inherit;
     line-height: inherit;
   }
+
+  @media (min-width: $breakpoint-1150) {
+    padding: 32px 0;
+    font-size: 1.13rem;
+    line-height: 1.41;
+
+    li:not(:first-child) & {
+      padding-left: 35px;
+    }
+
+    li:not(:last-child) & {
+      padding-right: 35px;
+      border-right: 1px solid #ececec;
+    }
+  }
 }
 
 .header__user-nav {
   @media (min-width: $breakpoint-768) {
     display: flex;
     max-width: 600px;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $breakpoint-1150) {
+    max-width: 450px;
+    order: 3;
   }
 }
 
@@ -167,14 +204,32 @@
     padding: 22px 0;
     gap: 37px;
   }
+
+  @media (min-width: $breakpoint-1150) {
+    left: 0;
+    max-width: none;
+    gap: 45px;
+  }
 }
 
 .header__special-link {
   display: none;
+
+  @media (min-width: $breakpoint-1150) {
+    display: block;
+    color: #000000;
+    font-size: inherit;
+    font-weight: 700;
+    line-height: inherit;
+  }
 }
 
 .header__hint {
   color: $primaryColor;
+
+  @media (min-width: $breakpoint-1150) {
+    margin-left: auto;
+  }
 }
 
 /***** Burger *****/
