@@ -1,0 +1,5 @@
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding));
+  padding: 0 var(--container-side-padding);
+  margin: 0 auto;
+}

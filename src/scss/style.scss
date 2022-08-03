@@ -1,0 +1,9 @@
+/*** GLOBAL ***/
+@import "./global/variables";
+@import "./global/mixins";
+@import "./global/common";
+
+/*** BLOCKS ***/
+@import "components/container";
+@import "components/visually-hidden";
+@import "components/header";
